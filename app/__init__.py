@@ -8,5 +8,6 @@ Created on 2018年7月16日
 from flask import Flask 
 
 app = Flask(__name__) 
+app.config.from_object('config')
 
 from app import views
